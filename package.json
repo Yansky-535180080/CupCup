@@ -4,7 +4,6 @@
   "description": "Heroku Hello World App.",
   "main": "index.js",
   "scripts": {
-    "postinstall": "npm run build",
     "start": "node index.js",  
     "dev": "nodemon", 
     "test": "echo \"Error: no test specified\" && exit 1"
