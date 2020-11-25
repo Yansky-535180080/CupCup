@@ -1,4 +1,5 @@
 const express = require('express');
+const port = process.env.PORT || 4000;
 
 const app = express();
 
@@ -20,6 +21,6 @@ app.delete('/user', function(req, res) {
 
 app.use(express.static('public'));
 
-app.listen('3000', () => {
-    console.log('Server running...');
+app.listen(port, () => {
+    console.log(`Server running at port ${port}`);
 });
